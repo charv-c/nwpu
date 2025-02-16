@@ -1640,12 +1640,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Points:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1027636433}
+  - {fileID: 1149988169}
+  - {fileID: 53746305}
+  - {fileID: 154393927}
+  - {fileID: 619428660}
+  - {fileID: 1472337731}
+  - {fileID: 890762073}
+  - {fileID: 2114613231}
+  - {fileID: 1039783017}
+  - {fileID: 81583459}
 --- !u!1 &1883539456
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class Chess : MonoBehaviour
@@ -9,16 +11,22 @@ public class Chess : MonoBehaviour
     public int ChessIndex;
     public int ChessLocationIndex { get { return chesslocationindex; } }
     int chesslocationindex;
+
+    public Dice dice;
     // Start is called before the first frame update
     void Start()
     {
-        
+        dice.events.oneParaEvent.AddListener(NowMove);
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+    private void NowMove(int delta)
+    {
+        Move(delta);
     }
     public void Move(int delta)
     {
@@ -29,6 +37,7 @@ public class Chess : MonoBehaviour
             MoveToIndex(temp+chesslocationindex);
         }
         chesslocationindex += temp;
+        BoardManager.Instance.OnMoveEnd(chesslocationindex,ChessIndex);
     }
     void MoveToIndex(int index)
     {

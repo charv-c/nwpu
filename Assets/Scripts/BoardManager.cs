@@ -30,8 +30,13 @@ public class BoardManager : MonoBehaviour
     {
         
     }
-    public void AfterMove()
+    public void OnMoveEnd(int chesslocation,int index)
     {
-
+        /*共5种格子，分为抽牌，出售（占3格）事件（占两格）空白一格*/
+        int type = chesslocation % 7;
+        if(type==0) 
+        {
+            
+        }
     }
 }

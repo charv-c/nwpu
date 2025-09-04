@@ -1773,7 +1773,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c1128de5b586324f9c7356e913f23b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1769074240}
+  image: {fileID: 0}
+  diceSprites:
+  - {fileID: -1584319180, guid: a16a9e89030fffe4ea4af15b6a8bca23, type: 3}
+  - {fileID: 348036400, guid: a16a9e89030fffe4ea4af15b6a8bca23, type: 3}
+  - {fileID: -1563958133, guid: a16a9e89030fffe4ea4af15b6a8bca23, type: 3}
+  - {fileID: 1579920652, guid: a16a9e89030fffe4ea4af15b6a8bca23, type: 3}
+  - {fileID: 1937790270, guid: a16a9e89030fffe4ea4af15b6a8bca23, type: 3}
+  - {fileID: 548485177, guid: a16a9e89030fffe4ea4af15b6a8bca23, type: 3}
+  rollDuration: 0
+  events:
+    zeroParaEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    oneParaEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    twoParaEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    threeParaEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1883539456
 GameObject:
   m_ObjectHideFlags: 0
